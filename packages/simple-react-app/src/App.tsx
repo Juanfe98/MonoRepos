@@ -2,7 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { QueryPayload } from 'simple-node-server/server';
-
+//Import subModule
+import DarkMode from './react-dark-mode/src/DarkMode';
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div className="App">
+      <DarkMode />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
